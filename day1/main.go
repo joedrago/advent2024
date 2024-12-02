@@ -31,7 +31,7 @@ func main() {
 		}
 		rawNums := strings.Fields(lines[i])
 		if len(rawNums) < 2 {
-			panic("not enough numbers!")
+			continue
 		}
 
 		l, err := strconv.Atoi(rawNums[0])
@@ -51,8 +51,8 @@ func main() {
 	slices.Sort(listL)
 	slices.Sort(listR)
 
-	similarityScore := 0
 	totalDistance := 0
+	similarityScore := 0
 	for i := 0; i < len(listL); i++ {
 		l := listL[i]
 		r := listR[i]
