@@ -1,0 +1,9 @@
+{
+    "name": "advent2024",
+    "prettier": {
+        "printWidth": 130,
+        "tabWidth": 4,
+        "trailingComma": "none",
+        "semi": false
+    }
+}
