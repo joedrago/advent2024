@@ -98,7 +98,7 @@ class Grid {
 const main = async (argv) => {
     const inputFilename = argv.shift()
     if (!inputFilename) {
-        console.error("Syntax: day4 [input.txt]")
+        console.error("Syntax: day04 [input.txt]")
         return
     }
 

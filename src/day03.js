@@ -137,7 +137,7 @@ const findMulsDont = (mem, sumFunc) => {
 const main = async (argv) => {
     const inputFilename = argv.shift()
     if (!inputFilename) {
-        console.error("Syntax: day3 [input.txt]")
+        console.error("Syntax: day03 [input.txt]")
         return
     }
 

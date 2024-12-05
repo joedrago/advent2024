@@ -3,7 +3,7 @@ fs = require("fs")
 const main = async (argv) => {
     const inputFilename = argv.shift()
     if (!inputFilename) {
-        console.error("Syntax: day1 [input.txt]")
+        console.error("Syntax: day01 [input.txt]")
         return
     }
 
