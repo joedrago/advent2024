@@ -1,16 +1,6 @@
 use std::collections::HashMap;
-use std::env;
-use std::fs;
 
-fn main() {
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        println!("Syntax: day1 [input.txt]");
-        return;
-    }
-
-    let input_filename = &args[1];
-    let contents = fs::read_to_string(input_filename).expect("Cant read input");
+pub fn main(contents: String) {
     let lines = contents.lines();
 
     let mut list_l = Vec::new();
