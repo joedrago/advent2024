@@ -1,5 +1,3 @@
-const { lstatSync } = require("fs")
-
 fs = require("fs")
 
 const debug = console.log
