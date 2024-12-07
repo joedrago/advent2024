@@ -33,6 +33,10 @@ const isSolvable = (availableOps, goal, vals) => {
             }
         }
         debug(`Attempt[${goal}]: ${equation} = ${attempt}`)
+        if (attempt > goal) {
+            debug(`Attempt[${goal}]: Unsolvable (too big)`)
+            return false
+        }
         if (attempt == goal) {
             debug(`Attempt[${goal}]: Solvable`)
             return true
@@ -61,7 +65,7 @@ const isSolvable = (availableOps, goal, vals) => {
         }
     }
 
-    debug(`Attempt[${goal}]: Unsolvable`)
+    debug(`Attempt[${goal}]: Unsolvable (exhaustive)`)
     return false
 }
 
